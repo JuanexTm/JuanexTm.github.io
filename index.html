@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mis Proyectos en P5.js</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.min.js"></script>
+</head>
+<body>
+  <div class="container mx-auto">
+    <h1 class="text-3xl font-bold mb-2">Hola, soy Juanes, ingeniero y diseñador de experiencias interactivas</h1>
+    <p>Bienvenido a mi página de proyectos en P5.js. Aquí encontrarás una selección de mis trabajos más recientes, que reflejan mi pasión por la programación creativa y la experimentación visual.</p>
+    
+    <div class="project-container">
+      <div class="project-card">
+        <div id="project1"></div>
+        <h3>Proyecto 1</h3>
+        <p class="project-description">Proyecto enfocado a la exploración del concepto de "Word as image" con la palabra "Flotar", ¡Prueba a dar Click!</p>
+        <a href="https://editor.p5js.org/JuanexTm/sketches/v5zpzg2aH" target="_blank">Ver proyecto</a>
+        <script>
+          new p5((sketch) => {
+            sketch.setup = () => {
+              sketch.createCanvas(300, 150).parent('project1');
+            };
+          }, 'project1');
+        </script>
+        <iframe src="https://editor.p5js.org/JuanexTm/full/v5zpzg2aH"></iframe>
+      </div>
+      
+      <div class="project-card">
+        <div id="project2"></div>
+        <h3>Proyecto 2</h3>
+        <p class="project-description">Exploración de partículas y su comportamiento antes estimulos, ¿Por qué no intentas darles Click?</p>
+        <a href="https://editor.p5js.org/JuanexTm/sketches/4jcRi0c04" target="_blank">Ver proyecto</a>
+        <script>
+          new p5((sketch) => {
+            sketch.setup = () => {
+              sketch.createCanvas(300, 150).parent('project2');
+            };
+          }, 'project2');
+        </script>
+        <iframe src="https://editor.p5js.org/JuanexTm/full/4jcRi0c04"></iframe>
+      </div>
+      
+      <div class="project-card">
+        <div id="project3"></div>
+        <h3>Proyecto 3</h3>
+        <p class="project-description">Uso de fuerzas y de rotación para crear objetos giratorios similares a un sistema solar interdimensional con su propio teseracto de epicentro.</p>
+        <a href="https://editor.p5js.org/JuanexTm/sketches/70C81eO0I" target="_blank">Ver proyecto</a>
+        <script>
+          new p5((sketch) => {
+            sketch.setup = () => {
+              sketch.createCanvas(300, 150).parent('project3');
+            };
+          }, 'project3');
+        </script>
+        <iframe src="https://editor.p5js.org/JuanexTm/full/70C81eO0I"></iframe>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
